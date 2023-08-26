@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-size: 150%;
+    font-family: 'Roboto' , sans-serif , monospace;
+    font-weight: light;
+}
+
+/* Body of HTML divs ------------------------------------------------------------------------ */
+
+/* HTML head divs ------------------------------------------------------------------------ */
+
+.container {
+    display: block;
+}
+
+.head-back {
+    background-color: #9FC5F8;
+    display: flex;
+    flex: auto;
+}
+
+.head {
+    background-color: #9FC5F8;
+    display: flex;
+    width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.head-left {
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1 0 auto;
+    line-height: 100%;
+    font-weight: bold;
+}
+
+.head-right {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1 0 auto;
+}
+
+/* HTML body divs ------------------------------------------------------------------------ */
+
+.body {
+    width: 1200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.body-head {
+    margin: 40px 20px 40px;
+    border-bottom: 2px solid black;
+    border-radius: 2px;
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.body-head-left {
+    display: flex;
+    flex: auto;
+    justify-content: flex-start;
+    align-items: center;
+    line-height: 100%;
+}
+
+.body-head-right {
+    display: flex;
+    flex: auto;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.mainbody {
+    width: 1200px;
+    display: flex;
+}
+
+.weather {
+    flex: auto;
+    margin: 0px 20px;
+    background-color:#EEEEEE;
+    padding: 20px 30px 30px;
+    display: block;
+}
+
+.weather-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.weather-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 0px;
+}
+
+.weather-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.weather-foot {
+    display: flex;
+    align-items: center;
+}
+
+.weather-foot-left {
+    display: flex;
+    flex: auto;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.weather-foot-right {
+    display: flex;
+    flex: auto;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* HTML cookie divs ------------------------------------------------------------------------ */
+
+.cookie {
+    border: 3px solid black;
+    border-radius: 3px;
+    background-color: #EEEEEE;
+    width: 1160px;
+    left: 50%;
+    transform: translate(-50%);
+    /* I looked up this bit ^ from a forum to center the popup and it works great! */
+    position: fixed;
+    bottom: 5px;
+    display: flex;
+    padding: 20px;
+}
+
+.cookie-left {
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cookie-middle {
+    display: block;
+    flex: 1 0 auto;
+    width: 500px;
+}
+
+.cookie-middle-head {
+    display: flex;
+}
+
+.cookie-middle-body {
+    display: flex;
+    font-size: 90%;
+}
+
+.cookie-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* HTML element classes ------------------------------------------------------------------------ */
+
+.head-link {
+    text-decoration: none;
+    color: white;
+}
+
+.link {
+    color: #115997;
+}
+
+.weather-icon {
+    height: 190px;
+    border-radius: 50%;
+}
+
+.high {
+    color: #CE2B28;
+}
+
+.low {
+    color: #2B78E4;
+}
+
+#cookie-img {
+    height: 80px;
+}
+
+#wrap {
+    overflow-wrap: break-word;
+}
+
+#accept {
+    color: black;
+    background-color: #9FC5F8;
+    border: 2px solid rgb(0,0,0);
+    box-shadow: 3px 3px rgb(0,0,0);
+    font-size: 90%;
+    padding: 5px 10px;
+    margin: 0px 10px 0px 20px;
+}
+
+#degrees-select {
+    border: 2px solid black;
+    padding: 5px 3px;
+    font-size: 100%;
+    margin-left: 10px;
+}

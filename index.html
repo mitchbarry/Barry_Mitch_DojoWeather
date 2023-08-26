@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoWeather</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="head-back">
+            <div class="head">
+                <div class="head-left">
+                    <h1>
+                        DojoWeather
+                    </h1>
+                </div>
+                <div class="head-right">
+                    <a href="#" class="head-link" onclick="weatherBurbank()">
+                        <h3>
+                            Burbank
+                        </h3>
+                    </a>
+                    <a href="#" class="head-link" onclick="weatherChicago()">
+                        <h3>
+                            Chicago
+                        </h3>
+                    </a>
+                    <a href="#" class="head-link" onclick="weatherDallas()">
+                        <h3>
+                            Dallas
+                        </h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="body-head">
+                <div class="body-head-left">
+                    <h2>
+                        San Jose
+                    </h2>
+                </div>
+                <div class="body-head-right">
+                    <p>
+                        show temperature in
+                    </p>
+                    <select name="degrees" onchange="degrees()" id="degrees-select">
+                        <option>°C</option>
+                        <option>°F</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mainbody">
+                <div class="weather">
+                    <div class="weather-head">
+                        <h3>
+                            Today
+                        </h3>
+                    </div>
+                    <div class="weather-icon">
+                        <img src="assets/some_rain.png" alt="some_rain.png" class="weather-icon">
+                    </div>
+                    <div class="weather-body">
+                        <p>
+                            some rain
+                        </p>
+                    </div>
+                    <div class="weather-foot">
+                        <div class="weather-foot-left">
+                            <h3>
+                                <span class="high" id="high1">
+                                    24
+                                </span>
+                            </h3>
+                        </div>
+                        <div class="weather-foot-right">
+                            <h3>
+                                <span class="low" id="low1">
+                                    18
+                                </span>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="weather">
+                    <div class="weather-head">
+                        <h3>
+                            Tomorrow
+                        </h3>
+                    </div>
+                    <div class="weather-icon">
+                        <img src="assets/some_sun.png" alt="some_sun.png" class="weather-icon">
+                    </div>
+                    <div class="weather-body">
+                        <p>
+                            some sun
+                        </p>
+                    </div>
+                    <div class="weather-foot">
+                        <div class="weather-foot-left">
+                            <h3>
+                                <span class="high" id="high2">
+                                    27
+                                </span>
+                            </h3>
+                        </div>
+                        <div class="weather-foot-right">
+                            <h3>
+                                <span class="low" id="low2">
+                                    19
+                                </span>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="weather">
+                    <div class="weather-head">
+                        <h3>
+                            Friday
+                        </h3>
+                    </div>
+                    <div class="weather-icon">
+                        <img src="assets/some_clouds.png" alt="some_clouds.png" class="weather-icon">
+                    </div>
+                    <div class="weather-body">
+                        <p> 
+                            some clouds
+                        </p>
+                    </div>
+                    <div class="weather-foot">
+                        <div class="weather-foot-left">
+                            <h3>
+                                <span class="high" id="high3">
+                                    21
+                                </span>
+                            </h3>
+                        </div>
+                        <div class="weather-foot-right">
+                            <h3>
+                                <span class="low" id="low3">
+                                    16
+                                </span>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="weather">
+                    <div class="weather-head">
+                        <h3>
+                            Saturday
+                        </h3>
+                    </div>
+                    <div class="weather-icon">
+                        <img src="assets/some_sun.png" alt="some_sun.png" class="weather-icon">
+                    </div>
+                    <div class="weather-body">
+                        <p>
+                            some sun
+                        </p>
+                    </div>
+                    <div class="weather-foot">
+                        <div class="weather-foot-left">
+                            <h3> 
+                                <span class="high" id="high4">
+                                    26
+                                </span>
+                            </h3>
+                        </div>
+                        <div class="weather-foot-right">
+                            <h3>
+                                <span class="low" id="low4">
+                                    21
+                                </span>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cookie">
+            <div class="cookie-left">
+                <img src="assets/cookie.png" alt="cookie.png" id="cookie-img">
+            </div>
+            <div class="cookie-middle">
+                <div class="cookie-middle-head">
+                    <h4><strong>Stop! Cookie time</strong></h4>
+                </div>
+                <div class="cookie-middle-body">
+                    <p id="wrap">We use cookies (sadly nor the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#" class="link">Read more...</a></p>
+                </div>
+            </div>
+            <div class="cookie-right">
+                <button id="accept" onclick="accept()">I Accept</button>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
